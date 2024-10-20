@@ -53,3 +53,11 @@ function newElement() {
     }
   }
 }
+
+// Add event listener to input field for Enter key press
+var inputField = document.getElementById("myInput");
+inputField.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) { // Enter key has keyCode 13
+    newElement();
+  }
+});
